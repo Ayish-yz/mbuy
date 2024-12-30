@@ -1,0 +1,725 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfaff;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures responsive wrapping */
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For placing the button inside the input */
+    flex: 1;
+    max-width: 600px; /* Set a max width for the search bar */
+    margin: 10px auto; /* Center the search bar horizontally */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 50px 10px 15px; /* Space for the button inside */
+    border: 2px solid #9C27B0;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 3px; /* Place inside the input */
+    background-color: #9C27B0;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #7C1F92;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6a6666; /* Default link color */
+    font-weight: lighter;
+    transition: color 0.3s, font-weight 0.3s; /* Smooth hover effect */
+    padding-right: 10px;
+}
+
+.nav-links a:hover {
+    color: #4A004E !important;
+    font-weight: bold !important;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    color: #5D0096;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #9C27B0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #7C1F92;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%; /* Make the search bar full width */
+        margin: 10px 0;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-banner {
+    text-align: left; /* Align text to the left */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    background-image: url('/Images/home_slide.jpg');
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    color: white;
+    width: 100%; /* Ensure it stretches fully across the page */
+    border-radius: 0; /* Remove border-radius */
+}
+
+.main-banner h2 {
+    font-size: 3em; /* Large bold font */
+    font-weight: bold;
+    margin: 20px 30px 10px; /* Add space on the left for alignment */
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.main-banner p {
+    margin-bottom: 10px; /* Left-aligned with spacing */
+    font-size: 1.2em;
+    margin-left: 35px;
+}
+
+.main-banner a {
+    display: inline-block; /* Makes buttons inline elements */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 18px; /* Add border-radius to buttons */
+    margin: 5 10px; /* Spacing between buttons */
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.main-banner a:first-of-type { /* "Shop Now" button */
+    background-color: white;
+    color: #9C27B0; /* Violet text */
+    border: 2px solid #9C27B0; /* Violet border */
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 45px;
+}
+
+.main-banner a:first-of-type:hover { /* Hover effect for "Shop Now" */
+    background-color: #9C27B0;
+    color: white;
+}
+
+.main-banner a:last-of-type { /* "Earn More" link */
+    background-color: transparent;
+    color: rgb(210, 166, 210);
+    text-decoration: none; /* No underline */
+    margin-left: 10px; /* Align with left text */
+}
+
+.main-banner a:last-of-type:hover {
+    color: #922c73; /* Subtle hover effect */
+}
+
+
+
+
+
+
+
+/* middile portion */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+section.featured {
+    margin: 20px 30px; /* Adds margin on top, left, and right */
+    padding: 20px;
+    border-radius: 15px; /* Adds rounded corners */
+    background-color: #e0b9ed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.artists {
+    margin: 20px 30px; /* Adds margin on top, left, and right */
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 15px; /* Adds rounded corners */
+    background-color: #f2def9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.featured h2, .artists h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #727172;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px; /* Spacing between cards */
+    justify-content: center;
+}
+
+.artist-grid {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    color: #666;
+    width: 200px;
+    height: 300px;
+    margin-left: 6px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 138px;
+    height: 138px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.card p:first-of-type {
+    font-weight: bold;
+    color: #000; /* Set album names to bold black */
+}
+
+.card .details {
+    margin: 5px 0;
+    font-size: 0.7em;
+    color: #aaa;
+}
+
+.card .price {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card button {
+    width: 70%;
+    padding: 8px;
+    background-color: #af3fb1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.card button:hover {
+    background-color: #922a94;
+}
+
+.artist-card {
+    text-align: center;
+    color: #666;
+    transition: transform 0.3s ease-in-out;
+}
+
+.artist-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    margin: 0 auto;
+    border: 3px solid violet;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.artist-card p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #666;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth font-size change */
+}
+
+.artist-card:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.artist-card:hover p {
+    font-size: 1.1em; /* Increase font size on hover */
+    color: #4A004E; /* Change text color */
+}
+
+.artist-card button {
+    width: 70%;
+    padding: 8px;
+    background-color: #954397;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.artist-card button:hover {
+    background-color: #922a94;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    background-color: #af3fb1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #922a94;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .artist-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .artist-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+.section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.section h1 {
+    font-size: 2rem;
+    color: black;
+}
+
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.banner-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.banner img {
+    width: 100%;
+    flex-shrink: 0;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.banner:hover img {
+    transform: scale(1.1); /* Crop animation */
+    filter: blur(3px);    /* Minimal blur effect */
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    transition: left 0.3s ease;
+    text-align: left;
+}
+
+.banner:hover .banner-overlay {
+    left: 0; /* Slide in effect */
+}
+
+.banner-overlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-overlay p {
+    margin: 5px 0;
+}
+
+.see-more {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #b574d5;
+    padding: 10px 20px;
+    border: 2px solid #b574d5;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.see-more:hover {
+    background-color: #b574d5;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #e0b7f5;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 8px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #1a1a1a;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 12px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1a1a1a;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    flex-basis: 100%;
+    color: #333;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+footer .copyright p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .banner-overlay {
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer div {
+        margin: 10px 0;
+    }
+
+    footer .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
+/* Add font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Lora:wght@300;400;700&display=swap');
+
+.categories {
+    padding: 40px 10px;
+    text-align: center;
+    background-color: #f6f2fa;
+    font-family: 'Roboto', sans-serif; /* Set default font */
+}
+
+.categories h2 {
+    color: #6a2b91;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.category-card {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+/* Overlay with the genre name */
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.category-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for description */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 15px; /* Increase font size */
+    line-height: 1.6; /* Add line-height for better readability */
+    font-weight: 300; /* Lighter font-weight for elegance */
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6); /* Add subtle text shadow for contrast */
+    font-family: 'Lora', serif; /* Elegant font for description */
+}
+
+/* Hover effect */
+.category-card:hover {
+    transform: scale(1.05); /* Slight resize */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover .overlay {
+    opacity: 0; /* Hide genre name when hovered */
+}
+
+.category-card:hover .category-info {
+    opacity: 1; /* Show description */
+}
+
+.category-info p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}

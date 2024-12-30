@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7ebfc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .error-page {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .error-page h1 {
+            font-size: 2.5rem; /* Reduced size */
+            margin-bottom: 10px;
+            color: #b574d5; /* Violet color */
+        }
+
+        .error-page p {
+            font-size: 1rem; /* Adjusted size */
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .error-page img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-page button {
+            background-color: #b574d5; /* Violet color */
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .error-page button:hover {
+            background-color: #9c5bb0;
+        }
+
+        /* New emoji styling */
+        .error-page .emoji {
+            font-size: 6rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .error-page h1 {
+                font-size: 2rem;
+            }
+
+            .error-page p {
+                font-size: 0.9rem;
+            }
+
+            .error-page button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <h1>Oops!</h1>
+        <p>The page you’re looking for doesn’t exist.</p>
+        <button onclick="window.location.href='/'">Homepage</button>
+    </div>
+</body>
+</html>
